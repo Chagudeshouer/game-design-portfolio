@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">猫狗碰撞白盒地图设计示意</title>
+  <desc id="desc">展示高低差、掩体、占点区域、资源点与三条接近路线的俯视示意图。</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity=".06" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="zoneGlow">
+      <stop offset="0" stop-color="#ff6b3d" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#ff6b3d" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c9ff5c"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="760" fill="#171416"/>
+  <rect width="1200" height="760" fill="url(#grid)"/>
+  <path d="M0 176H1200M0 465H1200M262 0V760M830 0V760" stroke="#ffffff" stroke-opacity=".12"/>
+  <path d="M34 30h45M34 30v45M1166 30h-45M1166 30v45M34 730h45M34 730v-45M1166 730h-45M1166 730v-45" stroke="#c9ff5c" stroke-width="2"/>
+
+  <path d="M108 104H470L540 174V352L470 422H108Z" fill="#211b1b" stroke="#665047" stroke-width="2"/>
+  <path d="M660 108H1088L1040 270H776L720 328V444H660Z" fill="#20191a" stroke="#665047" stroke-width="2"/>
+  <path d="M160 510H520L616 604V676H160Z" fill="#211b1b" stroke="#665047" stroke-width="2"/>
+
+  <circle cx="610" cy="391" r="168" fill="url(#zoneGlow)"/>
+  <circle cx="610" cy="391" r="105" fill="none" stroke="#ff6b3d" stroke-width="3" stroke-dasharray="9 9"/>
+  <circle cx="610" cy="391" r="45" fill="#ff6b3d" fill-opacity=".18" stroke="#ff6b3d" stroke-width="2"/>
+  <path d="M610 336V446M555 391H665" stroke="#ff6b3d" stroke-width="1.5"/>
+  <text x="610" y="386" fill="#f2efe6" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="800" text-anchor="middle">CAPTURE</text>
+  <text x="610" y="414" fill="#ff8d6b" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="700" letter-spacing="3" text-anchor="middle">占点区域</text>
+
+  <g fill="#4b3c38" stroke="#9c7868" stroke-width="2">
+    <rect x="190" y="160" width="70" height="42" rx="5"/>
+    <rect x="190" y="260" width="42" height="88" rx="5"/>
+    <rect x="390" y="130" width="54" height="96" rx="5"/>
+    <rect x="392" y="535" width="102" height="48" rx="5"/>
+    <rect x="238" y="548" width="42" height="92" rx="5"/>
+    <rect x="904" y="143" width="86" height="44" rx="5"/>
+    <rect x="986" y="188" width="42" height="82" rx="5"/>
+    <rect x="854" y="276" width="94" height="45" rx="5"/>
+    <rect x="420" y="280" width="72" height="42" rx="5"/>
+    <rect x="757" y="520" width="74" height="48" rx="5" transform="rotate(-14 794 544)"/>
+  </g>
+  <g fill="none" stroke="#ff6b3d" stroke-width="2" stroke-dasharray="6 4">
+    <path d="M394 180v70"/>
+    <path d="M892 190h70"/>
+    <path d="M470 594h82"/>
+  </g>
+
+  <path d="M126 368C260 360 363 375 472 391" fill="none" stroke="#c9ff5c" stroke-width="3" stroke-dasharray="8 10" marker-end="url(#arrow)"/>
+  <path d="M1090 346C974 350 867 366 748 390" fill="none" stroke="#c9ff5c" stroke-width="3" stroke-dasharray="8 10" marker-end="url(#arrow)"/>
+  <path d="M610 676C602 611 593 557 603 496" fill="none" stroke="#c9ff5c" stroke-width="3" stroke-dasharray="8 10" marker-end="url(#arrow)"/>
+
+  <g font-family="Microsoft YaHei, sans-serif">
+    <text x="142" y="92" fill="#9a9b96" font-size="11" font-weight="700" letter-spacing="2">SPAWN / A</text>
+    <text x="924" y="92" fill="#9a9b96" font-size="11" font-weight="700" letter-spacing="2">SPAWN / B</text>
+    <text x="193" y="705" fill="#9a9b96" font-size="11" font-weight="700" letter-spacing="2">LOW ROUTE</text>
+    <text x="291" y="214" fill="#b8b4a9" font-size="12">可破坏掩体</text>
+    <text x="842" y="246" fill="#b8b4a9" font-size="12">高低差区域</text>
+    <text x="466" y="617" fill="#b8b4a9" font-size="12">地形陷阱</text>
+  </g>
+
+  <g transform="translate(1000 603)">
+    <rect width="146" height="102" rx="7" fill="#0d0e10" fill-opacity=".82" stroke="#4d453f"/>
+    <circle cx="18" cy="25" r="5" fill="#ff6b3d"/>
+    <text x="32" y="29" fill="#d9d5cb" font-family="Microsoft YaHei, sans-serif" font-size="10">目标与资源区</text>
+    <circle cx="18" cy="51" r="5" fill="#c9ff5c"/>
+    <text x="32" y="55" fill="#d9d5cb" font-family="Microsoft YaHei, sans-serif" font-size="10">接近动线</text>
+    <rect x="13" y="69" width="10" height="10" rx="2" fill="#4b3c38" stroke="#9c7868"/>
+    <text x="32" y="78" fill="#d9d5cb" font-family="Microsoft YaHei, sans-serif" font-size="10">掩体与视线</text>
+  </g>
+
+  <g transform="translate(64 62)">
+    <rect width="166" height="32" rx="16" fill="#ff6b3d"/>
+    <text x="83" y="21" fill="#141414" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="800" text-anchor="middle">MAP 01 / 白盒示意</text>
+  </g>
+</svg>

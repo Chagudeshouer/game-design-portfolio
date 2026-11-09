@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">弹幕拼途战斗与卡牌系统示意</title>
+  <desc id="desc">展示实时弹幕、卡牌构筑、资源管理和路线选择组成的核心循环。</desc>
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="cyanGlow">
+      <stop offset="0" stop-color="#65d8ff" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#65d8ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="limeGlow">
+      <stop offset="0" stop-color="#c9ff5c" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#c9ff5c" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#65d8ff"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="760" fill="#0c1419"/>
+  <rect width="1200" height="760" fill="url(#grid2)"/>
+  <path d="M34 30h45M34 30v45M1166 30h-45M1166 30v45M34 730h45M34 730v-45M1166 730h-45M1166 730v-45" stroke="#65d8ff" stroke-opacity=".65" stroke-width="2"/>
+
+  <g opacity=".8">
+    <circle cx="375" cy="332" r="175" fill="none" stroke="#65d8ff" stroke-opacity=".19" stroke-width="2"/>
+    <circle cx="375" cy="332" r="112" fill="none" stroke="#65d8ff" stroke-opacity=".17" stroke-width="2"/>
+    <circle cx="375" cy="332" r="54" fill="none" stroke="#65d8ff" stroke-opacity=".22" stroke-width="2"/>
+  </g>
+  <g stroke="#65d8ff" stroke-width="3" stroke-linecap="round">
+    <path d="M375 332L537 185"/>
+    <path d="M375 332L555 279"/>
+    <path d="M375 332L530 416"/>
+    <path d="M375 332L448 512"/>
+    <path d="M375 332L281 531"/>
+    <path d="M375 332L201 477"/>
+    <path d="M375 332L189 369"/>
+    <path d="M375 332L220 218"/>
+  </g>
+  <g fill="#65d8ff">
+    <circle cx="537" cy="185" r="6"/>
+    <circle cx="555" cy="279" r="5"/>
+    <circle cx="530" cy="416" r="6"/>
+    <circle cx="448" cy="512" r="5"/>
+    <circle cx="281" cy="531" r="6"/>
+    <circle cx="201" cy="477" r="5"/>
+    <circle cx="189" cy="369" r="6"/>
+    <circle cx="220" cy="218" r="5"/>
+  </g>
+  <circle cx="375" cy="332" r="48" fill="url(#cyanGlow)"/>
+  <circle cx="375" cy="332" r="24" fill="#d7f8ff" stroke="#65d8ff" stroke-width="3"/>
+  <path d="M375 298v-26M375 366v26M341 332h-26M409 332h26" stroke="#d7f8ff" stroke-width="2"/>
+  <text x="375" y="337" fill="#0c1419" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="900" text-anchor="middle">PLAYER</text>
+
+  <g transform="translate(755 125) rotate(4)">
+    <rect width="250" height="345" rx="17" fill="#121e25" stroke="#65d8ff" stroke-width="2"/>
+    <rect x="18" y="18" width="214" height="160" rx="11" fill="#172a32"/>
+    <circle cx="125" cy="98" r="44" fill="url(#limeGlow)"/>
+    <path d="M95 99L114 118L158 74" fill="none" stroke="#c9ff5c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="125" y="210" fill="#f2efe6" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="800" text-anchor="middle">技能卡牌</text>
+    <text x="125" y="240" fill="#6d8c98" font-family="Microsoft YaHei, sans-serif" font-size="12" text-anchor="middle">拖拽施放 / 连携构筑</text>
+    <rect x="51" y="268" width="148" height="44" rx="22" fill="#c9ff5c"/>
+    <text x="125" y="295" fill="#0d0e10" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="800" text-anchor="middle">RESOURCE 07</text>
+  </g>
+  <g transform="translate(887 302) rotate(-6)">
+    <rect width="146" height="210" rx="15" fill="#1b1724" stroke="#b19ad7" stroke-opacity=".55" stroke-width="2"/>
+    <rect x="17" y="20" width="112" height="104" rx="9" fill="#2a203a"/>
+    <circle cx="73" cy="72" r="31" fill="none" stroke="#c7b3ff" stroke-width="2" stroke-dasharray="5 5"/>
+    <text x="73" y="155" fill="#f2efe6" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="800" text-anchor="middle">强化</text>
+    <text x="73" y="181" fill="#776a8d" font-family="Microsoft YaHei, sans-serif" font-size="11" text-anchor="middle">合成 / 成长</text>
+  </g>
+
+  <g transform="translate(100 588)">
+    <rect width="1000" height="104" rx="12" fill="#101c22" stroke="#65d8ff" stroke-opacity=".35"/>
+    <path d="M40 52H140M250 52H350M460 52H560M670 52H770M880 52H960" stroke="#65d8ff" stroke-width="2" marker-end="url(#arrow2)"/>
+    <g fill="#f2efe6" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="700">
+      <text x="40" y="34">实时战斗</text>
+      <text x="250" y="34">获取卡牌</text>
+      <text x="460" y="34">资源管理</text>
+      <text x="670" y="34">合成强化</text>
+      <text x="880" y="34">路线选择</text>
+    </g>
+    <g fill="#67828d" font-family="Microsoft YaHei, sans-serif" font-size="10">
+      <text x="40" y="78">DODGE &amp; ENGAGE</text>
+      <text x="250" y="78">CARD DROP</text>
+      <text x="460" y="78">SPEND / KEEP</text>
+      <text x="670" y="78">BUILD SCALING</text>
+      <text x="880" y="78">RUN ROUTING</text>
+    </g>
+  </g>
+
+  <g transform="translate(70 58)">
+    <rect width="198" height="32" rx="16" fill="#c9ff5c"/>
+    <text x="99" y="21" fill="#0c1419" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="900" text-anchor="middle">SYSTEM 02 / 战斗循环</text>
+  </g>
+</svg>

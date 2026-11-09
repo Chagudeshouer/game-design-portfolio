@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex" />
+    <meta
+      name="description"
+      content="《东方雪冥录》关卡策划案：3D 第三人称动作冒险、关卡白盒、弹幕符卡、战斗节奏与玩家引导设计。"
+    />
+    <meta name="theme-color" content="#0d0e10" />
+    <title>东方雪冥录｜关卡策划案｜黄小龙游戏策划作品集</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <link rel="stylesheet" href="../assets/eastern-snow-case.css?v=20261109-02" />
+  </head>
+  <body class="case-page">
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="主导航">
+        <a class="brand" href="../index.html" aria-label="返回作品集首页">
+          <span class="brand-mark">XL</span>
+          <span>黄小龙<br />GAME DESIGN</span>
+        </a>
+        <button
+          class="menu-button"
+          type="button"
+          aria-label="打开导航"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="../index.html#profile">关于</a>
+          <a href="../index.html#experience">项目档案</a>
+          <a href="../index.html#advantages">个人优势</a>
+          <a
+            class="nav-cta"
+            href="https://space.bilibili.com/384782439"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            B站主页
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="case-hero eastern-case-hero">
+        <div class="case-hero-inner container">
+          <a class="back-link" href="../index.html#experience">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M13 8H3M7 4L3 8L7 12" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+            返回项目档案
+          </a>
+          <div class="case-kicker">Project 03 / Level Design Document</div>
+          <h1 class="case-title">东方雪冥录</h1>
+          <p class="case-deck">
+            幻想乡迎来又一个寒冷的冬天，博丽神社附近却接连发生参拜村民在风雪中伤亡的异样事件。
+            博丽灵梦与自称“最强”的冰冻妖精琪露诺结伴踏入雪原，在战斗、探索与解谜中逼近这场冬日异变背后的真正元凶。
+          </p>
+          <div class="case-document-mark">Level Whitebox / New Player Guidance</div>
+          <div class="case-meta">
+            <div class="case-meta-item">
+              <small>Type</small>
+              <strong>3D 第三人称动作冒险</strong>
+            </div>
+            <div class="case-meta-item">
+              <small>Structure</small>
+              <strong>3D 线性叙事探索</strong>
+            </div>
+            <div class="case-meta-item">
+              <small>Scope</small>
+              <strong>220m × 150m · 约 10 分钟</strong>
+            </div>
+            <div class="case-meta-item">
+              <small>Tools</small>
+              <strong>Unity / ProBuilder / PolyBrush</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="case-layout container">
+        <aside class="case-toc" aria-label="东方雪冥录页面栏目导航">
+          <div class="case-toc-heading">
+            <span>案例目录</span>
+            <strong>快速跳转</strong>
+          </div>
+          <nav class="case-toc-links">
+            <div class="case-toc-group">
+              <span class="case-toc-group-label">项目内容</span>
+              <a class="is-active" href="#project-reel" data-case-nav="project-reel">
+                <span>实机演示</span><small>01</small>
+              </a>
+              <a href="#planning" data-case-nav="planning">
+                <span>新版策划案</span><small>02</small>
+              </a>
+            </div>
+            <div class="case-toc-group">
+              <span class="case-toc-group-label">策划案</span>
+              <a href="#planning-narrative" data-case-nav="planning-narrative">
+                <span>关卡叙事背景</span><small>03</small>
+              </a>
+              <a href="#planning-overview" data-case-nav="planning-overview">
+                <span>关卡概述</span><small>04</small>
+              </a>
+              <a href="#planning-map" data-case-nav="planning-map">
+                <span>平面设计图</span><small>05</small>
+              </a>
+              <a href="#planning-demo" data-case-nav="planning-demo">
+                <span>Demo 与参考</span><small>06</small>
+              </a>
+              <a href="#planning-flow" data-case-nav="planning-flow">
+                <span>流程结构</span><small>07</small>
+              </a>
+              <a href="#planning-character" data-case-nav="planning-character">
+                <span>角色 3C</span><small>08</small>
+              </a>
+              <a href="#planning-spell" data-case-nav="planning-spell">
+                <span>弹幕符卡</span><small>09</small>
+              </a>
+              <a href="#planning-pacing" data-case-nav="planning-pacing">
+                <span>战斗节奏</span><small>10</small>
+              </a>
+              <a href="#planning-guidance" data-case-nav="planning-guidance">
+                <span>玩家引导</span><small>11</small>
+              </a>
+            </div>
+            <div class="case-toc-group">
+              <span class="case-toc-group-label">回顾</span>
+              <a href="#reflection" data-case-nav="reflection">
+                <span>项目总结</span><small>12</small>
+              </a>
+            </div>
+          </nav>
+        </aside>
+
+        <div class="case-reading">
+          <section class="case-block project-reel" id="project-reel" data-case-section>
+            <div class="case-block-heading">
+              <div>
+                <span class="case-block-index">01 / Project Reel</span>
+                <h2>关卡实机演示</h2>
+              </div>
+              <p>从叙事引入、能力教学、战斗验证到 Boss 高潮，完整检查空间动线、信息引导与战斗节奏。</p>
+            </div>
+            <div class="project-video-frame">
+              <video
+                autoplay
+                controls
+                muted
+                playsinline
+                preload="auto"
+                data-autoplay-project-video
+                poster="../assets/images/eastern-snow/snowfield-route.png"
+                aria-label="东方雪冥录关卡实机演示"
+              >
+                <source
+                  src="../assets/video/projects/eastern-snow-demo-20261105.mp4"
+                  type="video/mp4"
+                />
+                当前浏览器无法播放项目视频。
+              </video>
+            </div>
+          </section>
+
+          <section class="planning-shell" id="planning" data-case-section>
+            <header class="planning-document-head">
+              <span class="planning-document-kicker">LEVEL DESIGN DOCUMENT / WHITEBOX CASE</span>
+              <h2>东方雪冥录<br />关卡策划案</h2>
+              <p>
+                以战斗、叙事、探索为共同支柱，记录新手关卡从场景动线、角色能力、核心玩法到战斗节奏的完整设计思路。
+              </p>
+              <div class="planning-document-meta">
+                <span>3D 第三人称</span>
+                <span>关卡白盒</span>
+                <span>弹幕符卡</span>
+                <span>Unity / ProBuilder</span>
+              </div>
+              <a
+                class="planning-download"
+                href="../assets/docs/eastern-snow-level-design.docx"
+                download
+              >
+                下载 DOCX 原稿
+                <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 2V11M4.5 7.5L8 11L11.5 7.5M3 14H13" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </a>
+            </header>
+
+            <div class="planning-content">
+              <section
+                class="planning-section"
+                id="planning-narrative"
+                data-planning-section="关卡叙事背景"
+              >
+                <div class="planning-section-head"><span>关卡叙事背景</span></div>
+                <h2 class="planning-heading planning-heading-1">风雪异变中的同行与调查</h2>
+                <p class="planning-lead">
+                  幻想乡迎来又一个寒冷的冬天，博丽神社附近接连发生前来参拜的村民在风雪中伤亡的异样事件。
+                  博丽灵梦决定动身调查，并意外与自称“最强”的冰冻妖精琪露诺结伴同行。
+                </p>
+                <p class="planning-copy">
+                  二人踏进茫茫雪原，在纷飞的大雪中一路战斗、探索、解谜。灵梦以符卡展开华丽弹幕，
+                  琪露诺则操控寒冰之力，彼此配合，步步逼近这场冬日异变背后的真正元凶。
+                </p>
+                <p class="planning-copy">
+                  叙事以伙伴对话、目标移动和环境布景共同推进。关卡不只是战斗容器，
+                  还需要通过持续出现的叙事锚点，让玩家理解为什么前进、下一处目标在哪里，以及当前区域承担什么体验职责。
+                </p>
+                <figure class="planning-figure">
+                  <a
+                    class="planning-image-link"
+                    href="../assets/images/eastern-snow/snowfield-route.png"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="查看雪原路线与场景氛围原图"
+                  >
+                    <img
+                      src="../assets/images/eastern-snow/snowfield-route.png"
+                      alt="东方雪冥录雪原路线与场景氛围"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </a>
+                  <figcaption>雪原路线与场景氛围</figcaption>
+                </figure>
+              </section>
+
+              <section
+                class="planning-section"
+                id="planning-overview"
+                data-planning-section="关卡概述"
+              >
+                <div class="planning-section-head"><span>关卡概述</span></div>
+                <h2 class="planning-heading planning-heading-1">一、关卡概述与设计定位</h2>
+                <p class="planning-lead">
+                  本关以前期新手引导为定位，在教学中验证基础操作与核心玩法，
+                  同时建立战斗、叙事、探索共同组成关卡体验的设计基准。
+                </p>
+                <div class="case-spec-grid" aria-label="关卡基本参数">
+                  <article class="case-spec">
+                    <small>Level Type</small>
+                    <strong>3D 第三人称</strong>
+                    <span>动作冒险关卡</span>
+                  </article>
+                  <article class="case-spec">
+                    <small>Core Pillar</small>
+                    <strong>战斗 · 叙事 · 探索</strong>
+                    <span>共同组成核心体验</span>
+                  </article>
+                  <article class="case-spec">
+                    <small>Positioning</small>
+                    <strong>前期新手引导</strong>
+                    <span>教学、验证并确立设计基调</span>
+                  </article>
+                  <article class="case-spec">
+                    <small>Reference</small>
+                    <strong>战神 4 · 野林</strong>
+                    <span>新手教程关卡参考</span>
+                  </article>
+                </div>
+                <h3 class="planning-heading planning-heading-2">制作范围与关卡职责</h3>
+                <p class="planning-copy">
+                  关卡白盒使用 Unity、ProBuilder 与 PolyBrush 搭建，场景尺寸为 220m × 150m，
+                  预计游玩流程约 10 分钟。新手引导职责不只是逐项说明操作，还要让玩家在真实空间与战斗情境中反复调用能力。
+                </p>
+                <ul class="planning-list">
+                  <li><strong>战斗：</strong>建立近战、远程与弹幕符卡的基础操作认知，并通过敌人与可破坏障碍完成验证。</li>
+                  <li><strong>叙事：</strong>通过伙伴对话、镜头控制与场景信息交代调查目标，持续推动玩家前进。</li>
+                  <li><strong>探索：</strong>利用支线路径、拾取物、宝箱与视线关系建立空间探索动机和心理地图。</li>
+                </ul>
+              </section>
+
+              <section
+                class="planning-section"
+                id="planning-map"
+                data-planning-section="关卡平面设计图"
+              >
+                <div class="planning-section-head"><span>关卡平面设计图</span></div>
+                <h2 class="planning-heading planning-heading-1">二、先规划完整路线，再进入引擎搭建白盒</h2>
+                <p class="planning-lead">
+                  平面图将神社、森林、战斗区、解谜节点与 Boss 区域组织成一条可回望的 3D 线性路径。
+                </p>
+                <p class="planning-copy">
+                  路线控制玩家前进方向，也安排每一次能力教学、战斗验证与节奏放缓。
+                  关卡在主要动线之外保留支线空间，让探索、奖励和叙事信息为直行路线提供呼吸与变化。
+                </p>
+                <figure class="planning-figure">
+                  <a
+                    class="planning-image-link"
+                    href="../assets/images/eastern-snow/level-flow.png"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="查看关卡平面设计与流程结构原图"
+                  >
+                    <img
+                      src="../assets/images/eastern-snow/level-flow.png"
+                      alt="东方雪冥录关卡平面设计与流程结构"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </a>
+                  <figcaption>关卡平面设计与流程结构</figcaption>
+                </figure>
+              </section>
+
+              <section
+                class="planning-section"
+                id="planning-demo"
+                data-planning-section="Demo 与参考"
+              >
+                <div class="planning-section-head"><span>Demo 与参考</span></div>
+                <h2 class="planning-heading planning-heading-1">三、用可游玩结果验证关卡结构</h2>
+                <p class="planning-lead">
+                  Demo 记录关卡从叙事引入、能力教学、战斗验证到 Boss 高潮的完整结构，
+                  用于检查空间动线、信息引导与战斗节奏是否按设计意图传达。
+                </p>
+                <p class="planning-copy">
+                  页面开头的实机视频即本关当前白盒成果。关卡设计参考《战神 4》的野林新手教程关卡，
+                  重点借鉴其将操作教学、亲子叙事与空间探索融合在同一段连续体验中的组织方式。
+                </p>
+                <div class="demo-reference-card">
+                  <div>
+                    <small>Reference &amp; Demo</small>
+                    <strong>战神 4 · 野林 / 东方雪冥录关卡白盒</strong>
+                    <p>可在 B 站查看原演示视频，对照关卡区域推进与战斗验证过程。</p>
+                  </div>
+                  <a
+                    class="planning-download"
+                    href="https://www.bilibili.com/video/BV1k9kQBxEb9/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    打开演示视频
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </section>
+
+              <section
+                class="planning-section"
+                id="planning-flow"
+                data-planning-section="关卡流程结构"
+              >
+                <div class="planning-section-head"><span>关卡流程结构</span></div>
+                <h2 class="planning-heading planning-heading-1">四、用八段区域完成教学、验证与节奏推进</h2>
+                <p class="planning-lead">
+                  关卡采用 3D 线性叙事探索结构，每一段区域分别承担叙事、能力教学、战斗验证、
+                  探索放缓或高潮收束等职责。
+                </p>
+
+                <ol class="level-route" aria-label="关卡区域顺序">
+                  <li>
+                    <small>01 / START</small>
+                    <strong>神社（出发点）</strong>
+                  </li>
+                  <li>
+                    <small>02 / TUTORIAL</small>
+                    <strong>森林小径</strong>
+                  </li>
+                  <li class="route-combat">
+                    <small>03 / ENCOUNTER</small>
+                    <strong>灾难现场（遭遇战）</strong>
+                  </li>
+                  <li>
+                    <small>04 / EXPLORE</small>
+                    <strong>十字路口</strong>
+                  </li>
+                  <li class="route-combat">
+                    <small>05 / ENCOUNTER</small>
+                    <strong>神殿（遭遇战）</strong>
+                  </li>
+                  <li class="route-peak">
+                    <small>06 / CLIMAX</small>
+                    <strong>Boss 区域（Boss 战）</strong>
+                  </li>
+                  <li class="route-combat">
+                    <small>07 / VERIFY</small>
+                    <strong>神社后道</strong>
+                  </li>
+                  <li>
+                    <small>08 / END</small>
+                    <strong>神社（终点）</strong>
+                  </li>
+                </ol>
+
+                <div class="planning-table-wrap" tabindex="0" aria-label="关卡流程表，可横向滚动">
+                  <table class="planning-table is-wide">
+                    <thead>
+                      <tr>
+                        <th>区域名称</th>
+                        <th>核心功能</th>
+                        <th>设计重点</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>神社<br />（出发点）</td>
+                        <td>交代关卡叙事背景<br />基础操作教学</td>
+                        <td>
+                          以环境交代、布景营造紧张氛围，通过系统镜头控制进行关卡叙事。
+                          以琪露诺的剧情对话作为引导，控制整体关卡的动线。
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>森林小径</td>
+                        <td>
+                          验证“互动”基础操作<br />
+                          鼓励玩家探索支线区域，奠定关卡后续设计的体验基调<br />
+                          教学新能力“跳跃”“翻越”操作<br />
+                          引入关卡叙事，提供关卡目标
+                        </td>
+                        <td>
+                          布置灯光、颜色差异进行视觉引导，设置一定数量拾取物作为关卡 POI，控制玩家动线。
+                          在非主要动线的隐藏区域布置宝箱和剧情互动区域。道路狭窄，
+                          设置障碍物并搭配视线遮蔽，调整探索节奏；引入“未知飞行物”，
+                          通过镜头控制进行叙事与目标提示。
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>灾难现场<br />（遭遇战）</td>
+                        <td>
+                          教学新能力“弹幕符卡射击”操作，破坏关卡障碍<br />
+                          基础近战 / 远程战斗教学
+                        </td>
+                        <td>
+                          （1）小规模敌人战斗，引入战斗系统。<br />
+                          （2）通过火场、尸体、流血等交代环境叙事，营造紧张氛围。
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>十字路口</td>
+                        <td>拓宽支线路线，鼓励玩家探索，构建心理地图，延缓游戏节奏</td>
+                        <td>设计与玩法机制强相关的解谜房间，让玩家验证获得的新能力“弹幕符卡射击”。</td>
+                      </tr>
+                      <tr>
+                        <td>神殿<br />（遭遇战）</td>
+                        <td>
+                          进行关卡叙事，重新强化关卡目标<br />
+                          验证玩法机制与战斗能力<br />
+                          教学“符卡”机制在关卡机关解谜中的应用
+                        </td>
+                        <td>
+                          中规模敌人战斗，验证战斗系统。<br />
+                          设计与符卡能力相关的关卡机关，巩固玩家获得的能力。
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Boss 区域<br />（Boss 战）</td>
+                        <td>
+                          验证之前关卡的所有操作玩法<br />
+                          解锁重要新能力“破魔点”
+                        </td>
+                        <td>让玩家在验证此前学习成果的过程中获得成就感。</td>
+                      </tr>
+                      <tr>
+                        <td>神社后道</td>
+                        <td>验证玩家获取的新能力“破魔点”</td>
+                        <td>
+                          布置小 / 中规模敌人战斗，敌人类型与“破魔点”机制强相关，
+                          满足玩家迫切使用新能力的想法。
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>神社<br />（终点）</td>
+                        <td>
+                          交代关卡目标完成<br />
+                          引入新剧情和新关卡目标
+                        </td>
+                        <td>交代叙事背景，连接前后关卡。</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              <section
+                class="planning-section"
+                id="planning-character"
+                data-planning-section="角色 3C"
+              >
+                <div class="planning-section-head"><span>角色 3C</span></div>
+                <h2 class="planning-heading planning-heading-1">五、以第三人称控制承接探索、战斗与叙事</h2>
+                <p class="planning-lead">
+                  博丽灵梦具备基础行动能力和战斗能力，既能近距离作战，也能使用弹幕符卡远程攻击敌人。
+                </p>
+                <p class="planning-copy">
+                  弹幕符卡同时具有封印特色，成为本关玩法主题，并围绕“战斗—叙事—探索”展开。
+                  第三人称视角与半强制镜头共同承担角色控制：剧情叙事阶段使用强制镜头，
+                  战斗与探索阶段保留自由操作。
+                </p>
+                <div class="three-c-grid">
+                  <article class="three-c-card">
+                    <small>Movement</small>
+                    <strong>基础行动</strong>
+                    <p>通过移动、跳跃与攀爬支持森林探索、支线路线和空间高低差。</p>
+                  </article>
+                  <article class="three-c-card">
+                    <small>Combat</small>
+                    <strong>近战与弹幕符卡</strong>
+                    <p>近距离攻击与远程符卡共同组成战斗手段，并提供封印能力。</p>
+                  </article>
+                  <article class="three-c-card">
+                    <small>Camera</small>
+                    <strong>半强制镜头控制</strong>
+                    <p>剧情叙事使用强制镜头，战斗与探索阶段保留第三人称自由操作。</p>
+                  </article>
+                </div>
+                <figure class="planning-figure">
+                  <a
+                    class="planning-image-link"
+                    href="../assets/images/eastern-snow/partner-dialogue.png"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="查看伙伴叙事与角色配合原图"
+                  >
+                    <img
+                      src="../assets/images/eastern-snow/partner-dialogue.png"
+                      alt="东方雪冥录伙伴叙事与角色配合"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </a>
+                  <figcaption>伙伴叙事与角色配合</figcaption>
+                </figure>
+              </section>
+
+              <section
+                class="planning-section"
+                id="planning-spell"
+                data-planning-section="弹幕符卡"
+              >
+                <div class="planning-section-head"><span>弹幕符卡</span></div>
+                <h2 class="planning-heading planning-heading-1">六、用弹幕符卡连接战斗、解谜与破魔点</h2>
+                <p class="planning-lead">
+                  弹幕符卡不只承担远程攻击，也同时作用于关卡障碍、机关与带破魔点的敌人。
+                </p>
+                <p class="planning-copy">
+                  同一个核心机制被放进不同场景职责中，让玩家持续复习操作，并逐步建立战斗决策。
+                  从直接攻击敌人，到破坏或封印场景机关，再到针对黄色高亮部位制造硬直，
+                  玩法复杂度沿关卡流程逐步提升。
+                </p>
+                <div class="planning-table-wrap" tabindex="0" aria-label="弹幕符卡机制表，可横向滚动">
+                  <table class="planning-table is-wide">
+                    <thead>
+                      <tr>
+                        <th>作用对象</th>
+                        <th>核心用途</th>
+                        <th>示例</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>敌人</td>
+                        <td>作为远程战斗的常规手段。</td>
+                        <td>（1）远程发射符卡弹幕攻击敌人。</td>
+                      </tr>
+                      <tr>
+                        <td>关卡障碍 / 机关</td>
+                        <td>
+                          弹幕符卡具有破除或封印功能，能破坏场景障碍，或封印运行的关卡机关，
+                          用于探索、解谜并推进关卡流程。
+                        </td>
+                        <td>
+                          （1）发射弹幕摧毁可破坏的木板障碍。<br />
+                          （2）破坏对应额定数量的封印球获取宝箱奖励；封印正在运作的关卡机关。
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>含破魔点部位</td>
+                        <td>
+                          作为关卡重要转折点获取的新能力，可对含破魔点的敌人发动封印攻击，
+                          造成较大伤害和硬直，增加战斗决策并调整战斗节奏。
+                        </td>
+                        <td>
+                          攻击带有黄色高亮标记的部位（破魔点），产生封印效果，
+                          使目标进入较长时间的硬直。
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <figure class="planning-figure">
+                  <a
+                    class="planning-image-link"
+                    href="../assets/images/eastern-snow/seal-gate.png"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="查看封印机关与弹幕符卡玩法原图"
+                  >
+                    <img
+                      src="../assets/images/eastern-snow/seal-gate.png"
+                      alt="东方雪冥录封印机关与弹幕符卡玩法"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </a>
+                  <figcaption>封印机关与弹幕符卡玩法</figcaption>
+                </figure>
+              </section>
+
+              <section
+                class="planning-section"
+                id="planning-pacing"
+                data-planning-section="战斗节奏"
+              >
+                <div class="planning-section-head"><span>战斗节奏</span></div>
+                <h2 class="planning-heading planning-heading-1">七、用战斗密度和能力获取控制关卡情绪</h2>
+                <p class="planning-lead">
+                  节奏从叙事引导开始，经过战斗学习、探索放缓、中规模验证与 Boss 高潮，
+                  最后用神社后道让玩家立即使用新能力，完成整段关卡的收束。
+                </p>
+                <ol class="pacing-track" aria-label="关卡战斗节奏流程">
+                  <li class="pacing-step">
+                    <small>01 / SETUP</small>
+                    <strong>叙事引导<br />神社</strong>
+                  </li>
+                  <li class="pacing-step is-breather">
+                    <small>02 / START</small>
+                    <strong>节奏启动<br />森林小径</strong>
+                  </li>
+                  <li class="pacing-step is-combat">
+                    <small>03 / LEARN</small>
+                    <strong>战斗学习与验证<br />灾难现场</strong>
+                  </li>
+                  <li class="pacing-step is-breather">
+                    <small>04 / REPEAT</small>
+                    <strong>放缓节奏、重复验证<br />十字路口</strong>
+                  </li>
+                  <li class="pacing-step is-combat">
+                    <small>05 / VERIFY</small>
+                    <strong>中规模战斗与验证<br />神殿</strong>
+                  </li>
+                  <li class="pacing-step is-breather">
+                    <small>06 / BREATHE</small>
+                    <strong>放缓节奏<br />山路、密室</strong>
+                  </li>
+                  <li class="pacing-step is-peak">
+                    <small>07 / CLIMAX</small>
+                    <strong>节奏高潮与新能力<br />Boss 区域</strong>
+                  </li>
+                  <li class="pacing-step is-combat">
+                    <small>08 / APPLY</small>
+                    <strong>小 / 中规模战斗与能力验证<br />神社后道</strong>
+                  </li>
+                  <li class="pacing-step">
+                    <small>09 / END</small>
+                    <strong>关卡结束<br />神社</strong>
+                  </li>
+                </ol>
+              </section>
+
+              <section
+                class="planning-section"
+                id="planning-guidance"
+                data-planning-section="玩家引导"
+              >
+                <div class="planning-section-head"><span>玩家引导</span></div>
+                <h2 class="planning-heading planning-heading-1">八、把动线提示融进角色、镜头和环境</h2>
+                <p class="planning-lead">
+                  主要路线依靠角色叙事和镜头中的目标移动方向来建立，环境表现则负责支线价值、
+                  情绪氛围和心理地图。
+                </p>
+                <p class="planning-copy">
+                  不同区域使用不同的视觉引导密度，避免所有信息都以同一种方式出现。
+                  主轴推进、支线探索与场景叙事彼此配合，让玩家既能看懂下一步方向，也愿意主动偏离主路。
+                </p>
+                <div class="guidance-grid">
+                  <article class="guidance-card">
+                    <small>Anchor 01</small>
+                    <strong>伙伴作为叙事锚点</strong>
+                    <p>以琪露诺引导玩家探索，作为主要动线引导和关卡驱动力。</p>
+                  </article>
+                  <article class="guidance-card">
+                    <small>Anchor 02</small>
+                    <strong>目标移动方向</strong>
+                    <p>在叙事节点的镜头控制下，通过黑衣人（关卡目标）的移动方向提供玩家行进方向。</p>
+                  </article>
+                </div>
+                <ul class="case-list area-guidance">
+                  <li>
+                    <strong>森林小径 / 神社后道</strong>
+                    <span>灯光与颜色作为大雪环境的视觉引导，地面颜色差异作为支线 POI。</span>
+                  </li>
+                  <li>
+                    <strong>灾难现场 / 神殿</strong>
+                    <span>
+                      布置焚烧、尸体、血迹场景，配合高饱和度红色灯光和狭窄多遮蔽地形，
+                      营造紧张节奏并放缓玩家脚步。
+                    </span>
+                  </li>
+                  <li>
+                    <strong>峭壁 / 悬崖 / 密室</strong>
+                    <span>
+                      在区域出入口放置火把灯光作为视觉引导，并布置拾取物和宝箱作为 POI。
+                      从峭壁处可以观察桥下暗处布置的灯光和宝箱，形成后续探索驱动力，
+                      同时构建玩家心理地图。
+                    </span>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </section>
+
+          <section class="case-block reflection" id="reflection" data-case-section>
+            <div class="case-block-heading">
+              <div>
+                <span class="case-block-index">Project Reflection</span>
+                <h2>让基础操作在真实关卡里被理解和验证</h2>
+              </div>
+            </div>
+            <div class="reflection-card">
+              <p>
+                这个关卡把基础操作教学、叙事推进与空间探索放在同一条连续体验里。
+                白盒阶段先明确每一段区域的教学职责和节奏作用，再使用灯光、地标、
+                伙伴对话与镜头控制组织玩家的注意力。
+              </p>
+              <ul class="case-list">
+                <li>
+                  <strong>结构</strong>
+                  <span>用八段区域完成能力教学、战斗验证、探索放缓与 Boss 高潮的连续递进。</span>
+                </li>
+                <li>
+                  <strong>引导</strong>
+                  <span>把伙伴、目标移动、灯光和 POI 分别对应到叙事、主线与支线探索。</span>
+                </li>
+                <li>
+                  <strong>玩法</strong>
+                  <span>让弹幕符卡同时服务远程战斗、机关解谜与破魔点攻击，形成可逐步复习的核心机制。</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <a class="case-next" href="bullet-journey.html">
+            <div>
+              <small>PROJECT 01 / AI-ASSISTED SOLO GAME</small>
+              <strong>弹幕拼途</strong>
+            </div>
+            <span class="next-arrow" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner container">
+        <span>© <span id="current-year">2026</span> 黄小龙</span>
+        <span>关卡策划 / 系统策划 · Unity3D / ProBuilder / PolyBrush</span>
+      </div>
+    </footer>
+
+    <script src="../assets/site.js?v=case-video-muted-20261109-01"></script>
+  </body>
+</html>

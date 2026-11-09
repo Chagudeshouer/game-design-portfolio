@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex" />
+    <meta
+      name="description"
+      content="黄小龙的游戏策划作品集，涵盖系统与关卡设计、Unity 原型、Game Jam 经历与游戏内容创作。"
+    />
+    <meta name="theme-color" content="#090b0c" />
+    <title>黄小龙｜游戏策划作品集</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/hero-cover.webp"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="assets/cinematic.css?v=profile-layout-20261105-100" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="cine-header">
+      <nav class="cine-nav container" aria-label="主导航">
+        <a class="cine-brand" href="#top" aria-label="回到首页">
+          <span class="cine-brand-mark">XL</span>
+          <span>黄小龙<br />GAME DESIGNER</span>
+        </a>
+        <button
+          class="menu-button"
+          type="button"
+          aria-label="打开导航"
+          aria-expanded="false"
+          aria-controls="cine-nav-links"
+        >
+          <i></i>
+        </button>
+        <div class="cine-nav-links" id="cine-nav-links">
+          <a href="#advantages">个人优势</a>
+          <a href="#profile">关于</a>
+          <a href="#experience">项目档案</a>
+          <a
+            href="https://space.bilibili.com/384782439"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            B站主页
+          </a>
+          <a href="#contact">联系我</a>
+          <button class="nav-resume-button" type="button" data-open-resume>
+            简历
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="page-status" aria-hidden="true">
+      <span class="page-status-index">01</span>
+      <span class="page-status-line"></span>
+      <span class="page-status-label">OPENING</span>
+    </div>
+    <div class="cursor-light" aria-hidden="true"></div>
+
+    <main id="main">
+      <section class="scene hero-scene" id="top" data-chapter="01" data-label="OPENING">
+        <video
+          class="hero-video"
+          id="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          poster="assets/images/hero-cover.webp"
+          aria-hidden="true"
+        >
+          <source src="assets/video/cover-loop.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <canvas class="signal-canvas" id="signal-canvas" aria-hidden="true"></canvas>
+        <div class="hero-vignette" aria-hidden="true"></div>
+        <div class="hero-goldframe" aria-hidden="true">
+          <i></i><i></i><i></i><i></i>
+        </div>
+        <div class="hero-year" aria-hidden="true">2026</div>
+        <div class="hero-coordinates" aria-hidden="true">
+          <span>X / 22.5431</span>
+          <span>Y / 114.0579</span>
+          <span>LINK / ONLINE</span>
+        </div>
+
+        <div class="hero-content container">
+          <div class="hero-copy">
+            <div class="hero-kicker">SYSTEMS × LEVELS / PORTFOLIO 2026</div>
+            <h1 class="hero-title" data-text="黄小龙">黄小龙</h1>
+            <p class="hero-role">系统策划 <span>/</span> 关卡策划</p>
+            <p class="hero-statement">
+              懂程序、懂引擎、懂AI赋能、更懂团队协作跟交流——等待你的挖掘
+            </p>
+            <div class="hero-meta" aria-label="职业关键词">
+              <span>核心循环</span>
+              <span>系统框架</span>
+              <span>白盒关卡</span>
+              <span>动线设计</span>
+              <span>UNITY / C#</span>
+              <span>AI赋能</span>
+            </div>
+            <button
+              class="cine-button primary hero-mobile-resume"
+              type="button"
+              data-open-resume
+            >
+              查看简历
+            </button>
+          </div>
+        </div>
+
+        <button class="resume-edge" type="button" data-open-resume>
+          RESUME / 向右查看简历
+        </button>
+        <a class="scroll-cue" href="#advantages">
+          <span>向下进入优势</span>
+          <span class="scroll-line" aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <section
+        class="scene ability-scene"
+        id="advantages"
+        data-chapter="02"
+        data-label="ADVANTAGE"
+      >
+        <div class="chapter-label">02 / PLAYER ADVANTAGES</div>
+        <div class="ability-intro">
+          <span class="ability-kicker">FOUR TRAITS · ONE DESIGNER</span>
+          <h2>个人优势</h2>
+          <p>能策划，能实现，也能把游戏讲清楚</p>
+        </div>
+
+        <div class="ability-grid">
+          <div class="grid-reticle" aria-hidden="true">
+            <span></span>
+          </div>
+          <a class="ability-tile" href="#experience" aria-label="查看项目经历：引擎与实现">
+            <video
+              class="ability-video"
+              muted
+              loop
+              playsinline
+              preload="none"
+              data-offset="0"
+              aria-hidden="true"
+            >
+              <source src="assets/video/ability-p1-engine-implementation.mp4?v=ability-videos-20261104-58" type="video/mp4" />
+            </video>
+            <div class="ability-copy">
+              <span class="ability-number">P1</span>
+              <div>
+                <small>ENGINE & CODE</small>
+                <h3>引擎与实现</h3>
+                <p>
+                  熟悉 Unity / C#，能独立完成核心逻辑、交互反馈与可玩原型，让设计和程序落地接轨。
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="ability-tile" href="#profile" aria-label="查看关于我：团队协作">
+            <video
+              class="ability-video"
+              muted
+              loop
+              playsinline
+              preload="none"
+              data-offset="0"
+              aria-hidden="true"
+            >
+              <source
+                src="assets/video/ability-p2-full-cycle.mp4?v=ability-videos-20261104-57"
+                type="video/mp4"
+              />
+            </video>
+            <div class="ability-copy">
+              <span class="ability-number">P2</span>
+              <div>
+                <small>TEAM COLLABORATION</small>
+                <h3>团队协作</h3>
+                <p>
+                  多次参加 Game Jam 并担任队长，习惯从玩法构思推进到团队交付，完成跨职能沟通与协作。
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="ability-tile" href="#experience" aria-label="查看项目经历：系统与关卡">
+            <video
+              class="ability-video"
+              muted
+              loop
+              playsinline
+              preload="none"
+              data-offset="0"
+              aria-hidden="true"
+            >
+              <source src="assets/video/ability-p3-system-level-design.mp4?v=ability-videos-20261104-58" type="video/mp4" />
+            </video>
+            <div class="ability-copy">
+              <span class="ability-number">P3</span>
+              <div>
+                <small>SYSTEM & LEVEL DESIGN</small>
+                <h3>系统与关卡</h3>
+                <p>
+                  从目标、资源、风险与反馈拆解核心循环，再用白盒关卡验证数值和节奏，让规则、取舍与玩家体验形成闭环。
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            class="ability-tile"
+            href="https://space.bilibili.com/384782439"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="在新标签页打开我的B站主页：内容分解输出"
+          >
+            <video
+              class="ability-video"
+              muted
+              loop
+              playsinline
+              preload="none"
+              data-offset="0"
+              aria-hidden="true"
+            >
+              <source
+                src="assets/video/ability-p4-content-creation.mp4?v=ability-videos-20261104-57"
+                type="video/mp4"
+              />
+            </video>
+            <div class="ability-copy">
+              <span class="ability-number">P4</span>
+              <div>
+                <small>CONTENT BREAKDOWN & OUTPUT</small>
+                <h3>内容分解输出</h3>
+                <p>
+                  在 B站持续输出游戏机制拆解与硬核攻略，能把玩法判断、数值逻辑和玩家体验讲清楚。
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="profile-scene" id="profile" data-chapter="03" data-label="PROFILE">
+        <div class="profile-stage container">
+          <div class="profile-chapter" aria-hidden="true">
+            <span><strong>03</strong> / PLAYER DOSSIER</span>
+            <span class="profile-status"><i></i> AVAILABLE FOR NEXT RAID</span>
+          </div>
+
+          <article class="player-dossier" aria-labelledby="profile-title">
+            <div class="dossier-tape tape-top" aria-hidden="true"></div>
+            <div class="dossier-tape tape-side" aria-hidden="true"></div>
+
+            <aside class="dossier-identity">
+              <div class="dossier-lanyard" aria-hidden="true">
+                <span>GAME DESIGN</span>
+                <i></i>
+              </div>
+              <div class="dossier-id-card">
+                <div class="dossier-id-meta">
+                  <span>PLAYER / 001</span>
+                  <span>CN · GZ</span>
+                </div>
+                <div class="dossier-portrait">
+                  <img
+                    src="assets/images/profile-photo.jpg"
+                    alt="黄小龙的个人照片"
+                    width="316"
+                    height="442"
+                  />
+                  <span class="dossier-online">ONLINE</span>
+                  <span class="dossier-level">2025</span>
+                </div>
+                <div class="dossier-name">
+                  <small>HUANG XIAOLONG / GAME DESIGNER</small>
+                  <h2>黄小龙</h2>
+                  <p>计算机背景，能把设计推进成可玩的原型。</p>
+                </div>
+                <div class="dossier-traits" aria-label="核心能力">
+                  <span>SYSTEMS</span>
+                  <span>LEVELS</span>
+                  <span>UNITY</span>
+                </div>
+                <div class="dossier-id-code" aria-hidden="true">
+                  <span></span>
+                  <small>PORTFOLIO ID / GDS-2025</small>
+                </div>
+              </div>
+            </aside>
+
+            <div class="dossier-sheet">
+              <header class="dossier-header">
+                <div>
+                  <small>CREATOR FILE / 03</small>
+                  <h2 id="profile-title">
+                    ABOUT <span>ME</span>
+                    <b>关于我</b>
+                  </h2>
+                </div>
+                <div class="creator-seal" aria-label="游戏创作者">
+                  <span>GAME</span>
+                  <strong>CREATOR</strong>
+                  <small>VERIFIED</small>
+                </div>
+              </header>
+
+              <div class="dossier-intro">
+                <div class="dossier-intro-lead">
+                  <p>
+                    我是黄小龙，我想做出一款<span>伟大的游戏</span>。
+                  </p>
+                  <p class="dossier-subtitle">
+                    我不只是一个热爱游戏的玩家，也是一名关注规则、节奏与玩家反馈的游戏策划。
+                  </p>
+                </div>
+                <p>
+                  计算机专业背景让我既关注设计逻辑，也能用 Unity / C# 把想法做成可运行的原型。
+                  从核心循环、角色收益到白盒关卡，我习惯把每个概念推进到实际体验。
+                </p>
+              </div>
+
+              <div class="dossier-facts" aria-label="个人关键信息">
+                <span><b>01</b> 2025 届本科</span>
+                <span><b>02</b> Game Jam 金奖</span>
+                <span><b>03</b> 系统 + 关卡</span>
+                <span><b>04</b> Unity 原型落地</span>
+              </div>
+
+              <div class="dossier-grid">
+                <section class="dossier-panel education-panel" aria-labelledby="education-title">
+                  <div class="panel-heading">
+                    <span>01</span>
+                    <h3 id="education-title">EDUCATION / 教育经历</h3>
+                  </div>
+                  <div class="education-summary">
+                    <div class="education-code" aria-hidden="true">CS</div>
+                    <div>
+                      <h4>仲恺农业工程学院</h4>
+                      <p>本科 · 计算机科学与技术 · 全日制</p>
+                      <time>2021.09 — 2025.06</time>
+                    </div>
+                  </div>
+                  <dl class="education-details">
+                    <div>
+                      <dt>CORE COURSES</dt>
+                      <dd>数据结构 / 软件工程 / 操作系统</dd>
+                    </div>
+                    <div>
+                      <dt>CAMPUS ROLE</dt>
+                      <dd>校宣传工作站站长 · 负责统筹协调与团队管理</dd>
+                    </div>
+                  </dl>
+                </section>
+
+                <section class="dossier-panel honors-panel" aria-labelledby="honors-title">
+                  <div class="panel-heading">
+                    <span>02</span>
+                    <h3 id="honors-title">HONORS / 荣誉奖项</h3>
+                  </div>
+                  <div class="award-showcase">
+                    <div class="award-records">
+                      <div class="featured-award">
+                        <div class="award-seal" aria-label="金奖">
+                          <span>GOLD</span>
+                          <strong>金</strong>
+                          <small>2022</small>
+                        </div>
+                        <div>
+                          <small>GIBIT GAME JAM · GUANGZHOU</small>
+                          <h4>高校 Game Jam 金奖 · 最佳玩法设计奖</h4>
+                          <p>获奖项目：《国王史莱姆的奇妙冒险》</p>
+                          <span>队长 / 主策划</span>
+                        </div>
+                      </div>
+                      <div class="featured-award secondary-award">
+                        <div class="award-seal" aria-label="优秀奖">
+                          <span>AWARD</span>
+                          <strong>优</strong>
+                          <small>2023</small>
+                        </div>
+                        <div>
+                          <small>GIBIT GAME JAM · CHINA</small>
+                          <h4>吉比特全国高校 Game Jam · 优秀奖</h4>
+                          <p>获奖项目：《摆烂大学》</p>
+                          <span>独立开发</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="award-photo-hang" aria-label="两张获奖现场照片">
+                      <span class="hang-pin" aria-hidden="true"></span>
+                      <svg class="hang-strings" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M50 4 L28 94 M50 4 L72 94" />
+                      </svg>
+                      <div class="award-polaroid-cluster">
+                        <figure class="award-polaroid award-polaroid-left">
+                          <img src="assets/images/awards/award-left.png" alt="Game Jam 获奖现场照片" loading="lazy" />
+                        </figure>
+                        <figure class="award-polaroid award-polaroid-right">
+                          <img src="assets/images/awards/award-right.png" alt="Game Jam 获奖现场照片" loading="lazy" />
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="minor-awards credential-award">
+                    <div>
+                      <b>PCTA</b>
+                      <span>PingCAP 认证 TiDB 数据库专员</span>
+                    </div>
+                    <div>
+                      <b>CET-4</b>
+                      <span>英语四级</span>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="dossier-panel target-panel" aria-labelledby="target-title">
+                  <div class="panel-heading">
+                    <span>03</span>
+                    <h3 id="target-title">CAREER TARGET / 求职意向</h3>
+                  </div>
+                  <div class="target-role">
+                    <span>OPEN TO WORK</span>
+                    <div>
+                      <h4>游戏策划</h4>
+                      <p>系统策划 / 关卡策划</p>
+                    </div>
+                  </div>
+                  <ul class="target-tags" aria-label="能力关键词">
+                    <li>核心循环</li>
+                    <li>系统框架</li>
+                    <li>白盒关卡</li>
+                    <li>动线设计</li>
+                    <li>UNITY / C#</li>
+                    <li>AI赋能</li>
+                  </ul>
+                </section>
+              </div>
+
+              <footer class="dossier-footer">
+                <div class="dossier-contacts">
+                  <a class="dossier-contact-link" href="mailto:1654639403@qq.com">
+                    <small>EMAIL</small>
+                    <span>1654639403@qq.com</span>
+                  </a>
+                  <a class="dossier-contact-link" href="tel:+8618026469816">
+                    <small>TEL</small>
+                    <span>18026469816</span>
+                  </a>
+                  <a
+                    class="dossier-contact-link"
+                    href="https://space.bilibili.com/384782439"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <small>BILIBILI</small>
+                    <span>B站@克劳德卡其猫</span>
+                  </a>
+                </div>
+                <a class="dossier-next" href="#experience">
+                  继续查看项目档案
+                  <span aria-hidden="true">↓</span>
+                </a>
+              </footer>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="scene content-scene project-scene"
+        id="experience"
+        data-chapter="04"
+        data-label="PROJECTS"
+      >
+        <div class="container">
+          <div class="content-head reveal">
+            <div>
+              <small>04 / PROJECT ARCHIVE</small>
+              <h2>项目档案</h2>
+            </div>
+            <p>
+              五个策划项目依次展开。前两个使用静音动态预览，后三个使用宣发图封面；前三个项目可进入网页版完整策划案，后两个保留项目概览。
+            </p>
+          </div>
+
+          <div class="project-showcase">
+            <article class="project-showcase-card" data-project-card="bullet-journey">
+              <div class="project-preview">
+                <video
+                  class="project-preview-video"
+                  muted
+                  loop
+                  playsinline
+                  autoplay
+                  preload="metadata"
+                  poster="assets/images/bullet-journey/battle-overview.webp"
+                  data-offset="0"
+                  aria-hidden="true"
+                >
+                  <source src="assets/video/projects/bullet-journey-demo-20261105.mp4" type="video/mp4" />
+                </video>
+                <div class="project-preview-shade" aria-hidden="true"></div>
+                <span class="project-preview-number">01</span>
+                <span class="project-preview-label">
+                  <i></i>
+                  GAMEPLAY + VIDEO
+                </span>
+                <button
+                  class="project-preview-open"
+                  type="button"
+                  data-project-open="bullet-journey"
+                  aria-label="查看《弹幕拼途（AI辅助独立游戏）》项目详情"
+                ></button>
+              </div>
+              <div class="project-card-copy">
+                <div class="project-card-eyebrow">
+                  <span>BULLET HELL ROGUELIKE</span>
+                  <span>SOLO BUILD</span>
+                </div>
+                <h3>弹幕拼途（AI辅助独立游戏）</h3>
+                <p>
+                  融合实时弹幕、卡牌构筑与分支路线的 Roguelike 可玩原型，已实现多套技能与战斗循环。
+                </p>
+                <dl class="project-card-facts">
+                  <div>
+                    <dt>我的分工</dt>
+                    <dd>独立开发 / 系统策划</dd>
+                  </div>
+                  <div>
+                    <dt>项目类型</dt>
+                    <dd>2D 弹幕 / Roguelike / 卡牌构筑</dd>
+                  </div>
+                  <div>
+                    <dt>技术栈</dt>
+                    <dd>Unity · C# · Codex</dd>
+                  </div>
+                </dl>
+                <button
+                  class="project-card-action"
+                  type="button"
+                  data-project-open="bullet-journey"
+                >
+                  查看项目详情
+                  <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="project-showcase-card" data-project-card="cat-dog">
+              <div class="project-preview">
+                <video
+                  class="project-preview-video"
+                  muted
+                  loop
+                  playsinline
+                  autoplay
+                  preload="metadata"
+                  poster="assets/images/cat-dog/marketing-promo.png"
+                  aria-hidden="true"
+                >
+                  <source src="assets/video/projects/cat-dog-demo-20261105.mp4" type="video/mp4" />
+                </video>
+                <div class="project-preview-shade" aria-hidden="true"></div>
+                <span class="project-preview-number">02</span>
+                <span class="project-preview-label">
+                  <i></i>
+                  SILENT PREVIEW
+                </span>
+                <button
+                  class="project-preview-open"
+                  type="button"
+                  data-project-open="cat-dog"
+                  aria-label="查看《猫狗碰撞（团队项目）》项目详情"
+                ></button>
+              </div>
+              <div class="project-card-copy">
+                <div class="project-card-eyebrow">
+                  <span>3D MULTIPLAYER ARENA</span>
+                  <span>2025</span>
+                </div>
+                <h3>猫狗碰撞（团队项目）</h3>
+                <p>
+                  萌宠题材的多端联机大乱斗，在多样地形中争夺地盘，结合角色技能与道具展开快节奏的战术博弈。
+                </p>
+                <dl class="project-card-facts">
+                  <div>
+                    <dt>我的分工</dt>
+                    <dd>队长 / 核心策划</dd>
+                  </div>
+                  <div>
+                    <dt>项目类型</dt>
+                    <dd>3D / 团队多人 / 大乱斗 / 动作</dd>
+                  </div>
+                  <div>
+                    <dt>技术栈</dt>
+                    <dd>Unity3D · C# · Photon Fusion · ShaderGraph</dd>
+                  </div>
+                </dl>
+                <button class="project-card-action" type="button" data-project-open="cat-dog">
+                  查看项目详情
+                  <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="project-showcase-card project-showcase-placeholder"
+              data-project-card="eastern-snow"
+            >
+              <div class="project-preview project-preview-static">
+                <img
+                  class="project-preview-still"
+                  src="assets/images/eastern-snow/marketing-promo.jpg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <div class="project-preview-shade" aria-hidden="true"></div>
+                <button
+                  class="project-preview-open"
+                  type="button"
+                  data-project-open="eastern-snow"
+                  aria-label="查看《东方雪冥录（关卡白盒）》项目详情"
+                ></button>
+              </div>
+              <div class="project-card-copy">
+                <div class="project-card-eyebrow">
+                  <span>SNOWFIELD ACTION RPG</span>
+                  <span>PROJECT 03</span>
+                </div>
+                <h3>东方雪冥录（关卡白盒）</h3>
+                <p>
+                  博丽灵梦与琪露诺踏入风雪笼罩的幻想乡，在符卡弹幕、寒冰能力与探索解谜中调查一场冬日异变。
+                </p>
+                <dl class="project-card-facts">
+                  <div>
+                    <dt>我的分工</dt>
+                    <dd>策划 / 程序 / 关卡</dd>
+                  </div>
+                  <div>
+                    <dt>项目类型</dt>
+                    <dd>RPG / 动作冒险 / STG</dd>
+                  </div>
+                  <div>
+                    <dt>技术栈</dt>
+                    <dd>Unity3D · ProBuilder · PolyBrush</dd>
+                  </div>
+                </dl>
+                <button
+                  class="project-card-action"
+                  type="button"
+                  data-project-open="eastern-snow"
+                >
+                  查看项目详情
+                  <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="project-showcase-card project-showcase-placeholder"
+              data-project-card="wheat-story"
+            >
+              <div class="project-preview project-preview-static">
+                <img
+                  class="project-preview-still"
+                  src="assets/images/wheat-story/marketing-promo.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <div class="project-preview-shade" aria-hidden="true"></div>
+                <button
+                  class="project-preview-open"
+                  type="button"
+                  data-project-open="wheat-story"
+                  aria-label="查看《麦田物语（毕业设计）》项目详情"
+                ></button>
+              </div>
+              <div class="project-card-copy">
+                <div class="project-card-eyebrow">
+                  <span>FARM SIMULATION</span>
+                  <span>GRADUATION PROJECT</span>
+                </div>
+                <h3>麦田物语（毕业设计）</h3>
+                <p>
+                  海难后扎根新小岛，体验四季耕作、村民互动与特色委托的像素风农场模拟经营游戏。
+                </p>
+                <dl class="project-card-facts">
+                  <div>
+                    <dt>我的分工</dt>
+                    <dd>毕业设计 / 独立开发</dd>
+                  </div>
+                  <div>
+                    <dt>项目类型</dt>
+                    <dd>模拟经营 / 农场</dd>
+                  </div>
+                  <div>
+                    <dt>技术栈</dt>
+                    <dd>Unity · C# · ScriptableObject · A* · Json · BlendTree</dd>
+                  </div>
+                </dl>
+                <button
+                  class="project-card-action"
+                  type="button"
+                  data-project-open="wheat-story"
+                >
+                  查看项目详情
+                  <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="project-showcase-card" data-project-card="angel-cat">
+              <div class="project-preview project-preview-static">
+                <img
+                  class="project-preview-still"
+                  src="assets/images/angel-cat/marketing-promo.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <div class="project-preview-shade" aria-hidden="true"></div>
+                <button
+                  class="project-preview-open"
+                  type="button"
+                  data-project-open="angel-cat"
+                  aria-label="查看《天使喵（团队项目）》项目详情"
+                ></button>
+              </div>
+              <div class="project-card-copy">
+                <div class="project-card-eyebrow">
+                  <span>NARRATIVE PUZZLE</span>
+                  <span>TIME REWRITE</span>
+                </div>
+                <h3>天使喵（团队项目）</h3>
+                <p>
+                  切换猫咪形态撕取关键回忆，像剪辑电影般改写父母争吵的过去，用蝴蝶效应重塑家庭未来。
+                </p>
+                <dl class="project-card-facts">
+                  <div>
+                    <dt>我的分工</dt>
+                    <dd>队长 / 主策 / 程序</dd>
+                  </div>
+                  <div>
+                    <dt>项目类型</dt>
+                    <dd>解谜 / 剧情 / 2D 横版</dd>
+                  </div>
+                  <div>
+                    <dt>技术栈</dt>
+                    <dd>Unity · C# · ScriptableObject · IEnumerator</dd>
+                  </div>
+                </dl>
+                <button
+                  class="project-card-action"
+                  type="button"
+                  data-project-open="angel-cat"
+                >
+                  查看项目详情
+                  <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <div class="details-band">
+            <article class="detail-block reveal">
+              <small>TOOLKIT</small>
+              <h3>设计与开发工具</h3>
+              <p>
+                Unity / C#、Unreal、Codex、ProBuilder、Excel、Axure、Visio、Xmind、Git / SVN。
+              </p>
+            </article>
+            <article class="detail-block reveal">
+              <small>GAME ANALYSIS</small>
+              <h3>机制拆解与内容表达</h3>
+              <p>
+                长期体验 ACT、FPS、SLG、MOBA、Roguelike、MMO，并在 B站持续发布游戏机制拆解和硬核攻略。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene next-chapter" id="contact" data-chapter="05" data-label="CONTACT">
+        <div class="next-chapter-inner container">
+          <small class="hero-kicker">NEXT / CONTACT</small>
+          <h2>继续查看作品，<br />或者直接聊聊<span>。</span></h2>
+          <div class="next-contact-details" aria-label="联系方式">
+            <a class="next-contact-link" href="mailto:1654639403@qq.com">
+              <small>EMAIL</small>
+              <span>1654639403@qq.com</span>
+            </a>
+            <a class="next-contact-link" href="tel:+8618026469816">
+              <small>TEL</small>
+              <span>18026469816</span>
+            </a>
+          </div>
+          <div class="next-actions">
+            <button class="cine-button primary" type="button" data-open-resume>
+              打开完整简历
+            </button>
+            <a class="cine-button secondary" href="mailto:1654639403@qq.com">发送邮件</a>
+            <a
+              class="cine-button secondary"
+              href="https://space.bilibili.com/384782439"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              B站主页
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="cine-footer">
+      <div class="cine-footer-inner container">
+        <span>© <span id="year">2026</span> 黄小龙</span>
+        <span>GAME DESIGNER / SYSTEMS + LEVELS</span>
+      </div>
+    </footer>
+
+    <div
+      class="resume-drawer"
+      id="resume-drawer"
+      aria-hidden="true"
+      aria-label="简历预览"
+    >
+      <div class="resume-backdrop" data-close-resume></div>
+      <div class="resume-panel" role="dialog" aria-modal="true" aria-labelledby="resume-title">
+        <header class="resume-panel-header">
+          <div class="resume-heading">
+            <strong id="resume-title">黄小龙 · 游戏策划简历</strong>
+            <span>RESUME / 2 PAGES</span>
+          </div>
+          <div class="resume-actions">
+            <a
+              class="resume-action"
+              href="assets/resume/黄小龙_游戏策划简历.pdf"
+              download
+            >
+              下载 PDF
+            </a>
+            <button
+              class="resume-close"
+              type="button"
+              aria-label="关闭简历"
+              data-close-resume
+            >
+              ×
+            </button>
+          </div>
+        </header>
+        <div class="resume-pages">
+          <a
+            class="resume-page"
+            href="assets/resume/page-1.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>PAGE 01</span>
+            <img
+              src="assets/resume/page-1.png"
+              alt="黄小龙游戏策划简历第一页"
+              width="1191"
+              height="1684"
+            />
+          </a>
+          <a
+            class="resume-page"
+            href="assets/resume/page-2.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>PAGE 02</span>
+            <img
+              src="assets/resume/page-2.png"
+              alt="黄小龙游戏策划简历第二页"
+              width="1191"
+              height="1684"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="project-detail"
+      id="project-detail"
+      aria-hidden="true"
+      aria-label="项目详情"
+    >
+      <div class="project-detail-backdrop" data-close-project></div>
+      <section
+        class="project-store"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="project-detail-title"
+      >
+        <header class="project-store-header">
+          <button class="project-detail-back" type="button" data-close-project>
+            <span aria-hidden="true">←</span>
+            返回项目档案
+          </button>
+          <div class="project-detail-breadcrumb">
+            <span id="project-detail-index">PROJECT / 01</span>
+            <i></i>
+            <span id="project-detail-genre">GAME PROJECT</span>
+          </div>
+          <button
+            class="project-detail-close"
+            type="button"
+            aria-label="关闭项目详情"
+            data-close-project
+          >
+            ×
+          </button>
+        </header>
+
+        <div class="project-store-content">
+          <main class="project-store-main">
+            <div class="project-media-stage" id="project-media-stage"></div>
+            <div
+              class="project-media-tabs"
+              id="project-media-tabs"
+              role="tablist"
+              aria-label="项目媒体"
+            ></div>
+            <p class="project-media-note">
+              媒体预览区 · 视频可播放 · 点击缩略图切换图片或演示
+            </p>
+          </main>
+
+          <aside class="project-store-sidebar">
+            <div class="project-marketing-art" id="project-marketing-art"></div>
+            <div class="project-store-copy">
+              <div class="project-store-tags" id="project-store-tags"></div>
+              <h2 id="project-detail-title"></h2>
+              <p class="project-store-summary" id="project-store-summary"></p>
+
+              <dl class="project-store-facts" id="project-store-facts"></dl>
+
+              <section class="project-responsibilities" aria-labelledby="project-role-title">
+                <h3 id="project-role-title">我的工作</h3>
+                <ul id="project-responsibilities"></ul>
+              </section>
+
+              <div class="project-download-actions" id="project-download-actions"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </div>
+
+    <script src="assets/cinematic.js?v=mobile-resume-left-swipe-20261109-01"></script>
+  </body>
+</html>
